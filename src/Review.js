@@ -11,7 +11,26 @@ const Review = () => {
     <article className="review">
       <div className="img-container">
         <img src={image} alt={name} className="person-img" />
+        <span className="quote-icon">
+          <FaQuoteRight />
+        </span>
       </div>
+      <h4 className="author">{name}</h4>
+      <p className="job">{job}</p>
+      <p className="info">{text}</p>
+
+      {/* buttons */}
+      <div className="button-container">
+        <button type="button" className="prev-btn">
+          <FaChevronLeft />
+        </button>
+        <button type="button" className="next-btn">
+          <FaChevronRight />
+        </button>
+      </div>
+      <button type="button" className="random-btn">
+        Surprise Me
+      </button>
     </article>
   );
 };
