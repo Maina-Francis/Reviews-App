@@ -158,6 +158,13 @@ main {
 .container {
   width: 80vw;
   max-width: var(--fixed-width);
+  position: absolute;
+  top: 5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
 }
 .review {
   background: var(--clr-white);
